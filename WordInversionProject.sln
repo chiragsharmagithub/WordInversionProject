@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordInversionProject", "WordInversionProject\WordInversionProject.csproj", "{429BA596-871C-4F3B-AEA8-582B4016A572}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{429BA596-871C-4F3B-AEA8-582B4016A572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429BA596-871C-4F3B-AEA8-582B4016A572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429BA596-871C-4F3B-AEA8-582B4016A572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429BA596-871C-4F3B-AEA8-582B4016A572}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C43F8C9D-8526-441B-87CE-408D2CD07490}
+	EndGlobalSection
+EndGlobal

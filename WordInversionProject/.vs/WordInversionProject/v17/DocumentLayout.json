@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\models\\wordinversionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:models\\wordinversionrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\controllers\\wordinversioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:controllers\\wordinversioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\interfaces\\iwordinversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:interfaces\\iwordinversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\wordinversionproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:wordinversionproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\services\\wordinversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:services\\wordinversionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\dtos\\wordinversionresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:dtos\\wordinversionresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\dtos\\searchrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:dtos\\searchrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\interfaces\\iwordinversionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:interfaces\\iwordinversionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\dtos\\wordinversionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:dtos\\wordinversionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\repositories\\wordinversionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:repositories\\wordinversionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|d:\\interview preparation\\company jds\\client 72\\coding assesment asp.net core mvc app\\wordinversionproject\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{429BA596-871C-4F3B-AEA8-582B4016A572}|WordInversionProject.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-13T14:33:20.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAswC4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T14:18:50.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WordInversionController.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Controllers\\WordInversionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WordInversionController.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Controllers\\WordInversionController.cs",
+              "RelativeToolTip": "Controllers\\WordInversionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T13:53:36.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WordInversionService.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Services\\WordInversionService.cs",
+              "RelativeDocumentMoniker": "Services\\WordInversionService.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Services\\WordInversionService.cs",
+              "RelativeToolTip": "Services\\WordInversionService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T12:05:58.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WordInversionProject",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\WordInversionProject.csproj",
+              "RelativeDocumentMoniker": "WordInversionProject.csproj",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\WordInversionProject.csproj",
+              "RelativeToolTip": "WordInversionProject.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-13T12:05:24.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SearchRequestDto.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\DTOs\\SearchRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\SearchRequestDto.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\DTOs\\SearchRequestDto.cs",
+              "RelativeToolTip": "DTOs\\SearchRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T11:44:50.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WordInversionResponseDto.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\DTOs\\WordInversionResponseDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\WordInversionResponseDto.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\DTOs\\WordInversionResponseDto.cs",
+              "RelativeToolTip": "DTOs\\WordInversionResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T11:42:22.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WordInversionRequestDto.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\DTOs\\WordInversionRequestDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\WordInversionRequestDto.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\DTOs\\WordInversionRequestDto.cs",
+              "RelativeToolTip": "DTOs\\WordInversionRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwwAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T11:40:29.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IWordInversionService.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Interfaces\\IWordInversionService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IWordInversionService.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Interfaces\\IWordInversionService.cs",
+              "RelativeToolTip": "Interfaces\\IWordInversionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T11:37:49.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WordInversionRepository.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Repositories\\WordInversionRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\WordInversionRepository.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Repositories\\WordInversionRepository.cs",
+              "RelativeToolTip": "Repositories\\WordInversionRepository.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAwDcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T11:18:51.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IWordInversionRepository.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Interfaces\\IWordInversionRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IWordInversionRepository.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Interfaces\\IWordInversionRepository.cs",
+              "RelativeToolTip": "Interfaces\\IWordInversionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T11:13:50.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA7wAsAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T10:53:42.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WordInversionRecord.cs",
+              "DocumentMoniker": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Models\\WordInversionRecord.cs",
+              "RelativeDocumentMoniker": "Models\\WordInversionRecord.cs",
+              "ToolTip": "D:\\Interview Preparation\\Company JDs\\Client 72\\Coding Assesment ASP.NET Core MVC app\\WordInversionProject\\Models\\WordInversionRecord.cs",
+              "RelativeToolTip": "Models\\WordInversionRecord.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T10:50:14.964Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -23,23 +23,27 @@ namespace WordInversionProject.Services
 			{
 				throw new ArgumentException("Sentence cannot be empty", nameof(sentence));
 			}
-
-			var invertedSentence = InvertWords(sentence);
-
-			var record = new WordInversionRecord
+			try
 			{
-				OriginalSentence = sentence.Trim(),
-				InvertedSentence = invertedSentence,
-				IpAddress = ipAddress
-			};
+				var invertedSentence = InvertWords(sentence);
+				var record = new WordInversionRecord
+				{
+					OriginalSentence = sentence.Trim(),
+					InvertedSentence = invertedSentence,
+					IpAddress = ipAddress ?? "Unknown"
+				};
+				var savedRecord = await _repository.CreateAsync(record);
+				_logger.LogInformation(
+					"Word inversion completed. ID: {Id}, Original: {Original}",
+					savedRecord.Id, savedRecord.OriginalSentence);
 
-			var savedRecord = await _repository.CreateAsync(record);
-
-			_logger.LogInformation(
-				"Word inversion completed. ID: {Id}, Original: {Original}",
-				savedRecord.Id, savedRecord.OriginalSentence);
-
-			return MapToDto(savedRecord);
+				return MapToDto(savedRecord);
+			}
+			catch(Exception ex)
+			{
+				_logger.LogError(ex, "Error during word inversion");
+				throw;
+			}
 		}
 
 		public async Task<IEnumerable<WordInversionResponseDto>> GetAllRecordsAsync()
@@ -47,10 +51,11 @@ namespace WordInversionProject.Services
 			try
 			{
 				var records = await _repository.GetAllAsync();
-				return records.Select(MapToDto);
+				return records.Select(MapToDto).ToList();
 			}
 			catch(Exception ex)
 			{
+				_logger.LogError(ex, "Error retrieving all records");
 				throw;
 			}
 		}
@@ -61,17 +66,30 @@ namespace WordInversionProject.Services
 			{
 				throw new ArgumentException("Search word cannot be empty", nameof(word));
 			}
-			var records = await _repository.FindByWordAsync(word);
-			return records.Select(w => MapToDto(w));
+			try
+			{
+				var records = await _repository.FindByWordAsync(word);
+				return records.Select(w => MapToDto(w)).ToList();
+			}
+			catch(Exception ex)
+			{
+				_logger.LogError(ex, "Error searching for word : {Word}", word);
+				throw;
+			}	
 		}
 
-		private string InvertWords(string sentence)
+		public string InvertWords(string sentence)
 		{
+			if(string.IsNullOrWhiteSpace(sentence))
+			{
+				return string.Empty;
+			}
+
 			// Split the sentence into words based on space, ignore empty entries
 			var words = sentence.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
 			// For each word, reverse its characters and store the results in a new Collection
-			var invertedWords = words.Select(word => new string(word.Reverse().ToArray()));
+			var invertedWords = words.Select(word => new String(word.Reverse().ToArray()));
 
 			// Join the reversed words back into a single string, separating them with spaces
 			return string.Join(" ", invertedWords);
@@ -84,7 +102,8 @@ namespace WordInversionProject.Services
 				Id = record.Id,
 				OriginalSentence = record.OriginalSentence,
 				InvertedSentence = record.InvertedSentence,
-				CreatedAt = record.CreatedAt
+				CreatedAt = record.CreatedAt,
+				IpAddress = record.IpAddress
 			};
 		}
 	}

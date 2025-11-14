@@ -5,7 +5,7 @@ using WordInversionProject.Interfaces;
 namespace WordInversionProject.Controllers
 {
 	[ApiController]
-	[Route("api/v1/[controller]")]
+	[Route("api/[controller]")]
 	[Produces("application/json")]
 	public class WordInversionController : Controller
 	{
@@ -21,11 +21,16 @@ namespace WordInversionProject.Controllers
 
 		[HttpPost("invert")]
 		[ProducesResponseType(typeof(WordInversionResponseDto), StatusCodes.Status201Created)]
+		[ProducesResponseType(StatusCodes.Status400BadRequest)]
 		[ProducesResponseType(StatusCodes.Status500InternalServerError)]
 		public async Task<ActionResult<WordInversionResponseDto>> InvertStatement([FromBody] WordInversionRequestDto request)
 		{
 			try
 			{
+				if(!ModelState.IsValid)
+				{
+					return BadRequest(ModelState);
+				}
 				var ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString() ?? "Unknown";
 				var result = await _service.InvertSentenceAsync(request.Sentence, ipAddress);
 
@@ -63,6 +68,10 @@ namespace WordInversionProject.Controllers
 		{
 			try
 			{
+				if (!ModelState.IsValid)
+				{
+					return BadRequest(ModelState);
+				}
 				var records = await _service.SearchByWordAsync(request.Word);
 				return Ok(records);
 			}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WordInversionProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80ebc4abf73760d444687bad9d8a3c2b89485b4b")]
 [assembly: System.Reflection.AssemblyProductAttribute("WordInversionProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WordInversionProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

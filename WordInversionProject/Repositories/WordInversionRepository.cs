@@ -16,6 +16,11 @@ namespace WordInversionProject.Repositories
 
 		public async Task<WordInversionRecord> CreateAsync(WordInversionRecord record)
 		{
+			if(record == null)
+			{
+				throw new ArgumentNullException(nameof(record));
+			}
+
 			try
 			{
 				await _context.WordInversions.AddAsync(record);
@@ -34,6 +39,7 @@ namespace WordInversionProject.Repositories
 			{
 				var records = await _context.WordInversions
 									     .OrderByDescending(x => x.CreatedAt)
+									     .AsNoTracking()
 									     .ToListAsync();
 				return records;
 			}
@@ -45,13 +51,17 @@ namespace WordInversionProject.Repositories
 
 		public async Task<IEnumerable<WordInversionRecord>> FindByWordAsync(string word)
 		{
-			var lowerWord = word.ToLower();
+			if (string.IsNullOrWhiteSpace(word))
+				throw new ArgumentNullException("Word cannot be empty", nameof(word));
+
+			var lowerWord = word.ToLower().Trim();
 			try
 			{
 				var records =  await _context.WordInversions
 							.Where(r => r.OriginalSentence.ToLower().Contains(lowerWord) ||
 									     r.InvertedSentence.ToLower().Contains(lowerWord))
 							.OrderByDescending(x => x.CreatedAt)
+							.AsNoTracking()
 							.ToListAsync();
 				return records;
 			}
@@ -60,7 +70,5 @@ namespace WordInversionProject.Repositories
 				throw;
 			}
 		}
-
-
 	}
 }

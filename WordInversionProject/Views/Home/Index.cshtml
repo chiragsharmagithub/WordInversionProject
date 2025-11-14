@@ -1,8 +1,104 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<WordInversionProject.DTOs.WordInversionResponseDto>
+@{
+        ViewData["Title"] = "Word Inversion";
+        Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Invert Section -->
+<div class="card">
+        <h2>Invert Sentence</h2>
+        <form method="post" action="/Home/Invert">
+                <div class="form-group">
+                        <label for="sentence">Enter your text:</label>
+                        <textarea id="sentence"
+                                  name="sentence"
+                                  placeholder="e.g., hello world angular"
+                                  required
+                                  maxlength="1000"></textarea>
+                        <span class="form-hint">Up to 1000 characters</span>
+                </div>
+                <button type="submit" class="btn-primary">Invert Text</button>
+        </form>
+</div>
+
+<!-- Search Section -->
+<div class="card">
+        <h2>Search Records</h2>
+        <form method="get" action="/Home/Search" class="search-bar">
+                <input type="text"
+                       name="word"
+                       placeholder="Search by word..."
+                       maxlength="100"
+                       required />
+                <button type="submit" class="btn-primary">Search</button>
+                @if (ViewBag.SearchPerformed)
+                {
+                        <form method="post" action="/Home/ClearSearch" style="display: inline; flex: 0;">
+                                <button type="submit" class="btn-outline">Clear</button>
+                        </form>
+                }
+        </form>
+</div>
+
+<!-- Records Section -->
+<div class="card">
+        <h2>
+                @if (ViewBag.SearchPerformed)
+                {
+                        <span>Search Results (@ViewBag.ResultCount found)</span>
+                }
+                else
+                {
+                        <span>All Records (@ViewBag.TotalRecords total)</span>
+                }
+        </h2>
+
+        @if (Model.Count == 0)
+        {
+                <div class="no-records">
+                        <div class="no-records-icon">📭</div>
+                        <div class="no-records-text">
+                                @if (ViewBag.SearchPerformed)
+                                {
+                                        <span>No results found for "<strong>@ViewBag.SearchWord</strong>"</span>
+                                }
+                                else
+                                {
+                                        <span>No records yet. Start by inverting a sentence!</span>
+                                }
+                        </div>
+                </div>
+        }
+        else
+        {
+                <table>
+                        <thead>
+                                <tr>
+                                        <th style="width: 8%">#</th>
+                                        <th style="width: 36%">Original</th>
+                                        <th style="width: 36%">Inverted</th>
+                                        <th style="width: 20%">Date</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                @foreach (var record in Model)
+                                {
+                                        <tr>
+                                                <td>
+                                                        <span class="badge">@(Model.IndexOf(record) + 1)</span>
+                                                </td>
+                                                <td>
+                                                        <code>@record.OriginalSentence</code>
+                                                </td>
+                                                <td>
+                                                        <code class="code-inverted">@record.InvertedSentence</code>
+                                                </td>
+                                                <td>
+                                                        <small>@record.CreatedAt.ToString("MMM dd, HH:mm")</small>
+                                                </td>
+                                        </tr>
+                                }
+                        </tbody>
+                </table>
+        }
 </div>

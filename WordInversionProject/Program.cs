@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using WordInversionProject.Data;
 using WordInversionProject.Interfaces;
 using WordInversionProject.Repositories;
@@ -7,29 +8,48 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
+builder.Services.AddRazorPages();
 
-// Database configuration
-builder.Services.AddDbContext<ApplicationDbContext>(options => 
-	options.UseSqlServer(
-			builder.Configuration.GetConnectionString("DefaultConnection"),
-			sqlOptions => sqlOptions.EnableRetryOnFailure()));
+// Configure Database connection (SQLite)
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// Register repositories and services
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+	options.UseSqlite(
+		connectionString
+	),
+	ServiceLifetime.Scoped
+);
+
+// Register custom repositories and services (Dependency Injection)
 builder.Services.AddScoped<IWordInversionRepository, WordInversionRepository>();
 builder.Services.AddScoped<IWordInversionService, WordInversionService>();
 
-// CORS configuration
-builder.Services.AddCors(options =>
+// Configure logging
+builder.Services.AddLogging(config =>
 {
-	options.AddPolicy("AllowAll", policy =>
-	{
-		policy.AllowAnyOrigin()
-			 .AllowAnyMethod()
-			 .AllowAnyHeader();
-	});
+	config.AddConsole();
+	config.AddDebug();
+	config.SetMinimumLevel(LogLevel.Information);
 });
 
+// Build application
 var app = builder.Build();
+
+// Initialize Database
+try
+{
+	using (var scope = app.Services.CreateScope())
+	{
+		var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+		dbContext.Database.EnsureCreated();
+		app.Logger.LogInformation("Database initialized successfully");
+	}
+}
+catch(Exception ex)
+{
+	app.Logger.LogError(ex, "Error during database initialization");
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -41,15 +61,15 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
-app.UseCors("AllowAll");
-
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+);
+
+app.MapControllers();
+app.MapRazorPages();
 
 app.Run();

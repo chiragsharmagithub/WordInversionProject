@@ -1,46 +1,71 @@
-Word Inversion App Setup & Run
-What You Have
-Pure ASP.NET Core 8 application. Just invert, get all, search.
+# Word Inversion App
 
-Before You Start
-You need: 
+A ASP.NET Core 8 application for inverting words in sentences, searching records, and viewing history.
 
-.NET 8 SDK (verify: dotnet --version)
-SQLite comes built-in.
+## Features
 
-Setup Instructions
-Step 1: Get Your Project Files
-Copy all files to your local directory. 
-Step 2: Install NuGet Packages
-Open terminal in your project directory and run:
+- Invert word order in sentences
+- Search through inverted records
+- View all records in a clean table interface
+- Simple, minimalist UI
 
-bash
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- **.NET 8 SDK** (verify installation: `dotnet --version`)
+- **SQLite** (comes built-in with the project)
+
+## Setup Instructions
+
+### Step 1: Clone the Repository
+
+Copy all project files to your local directory.
+
+### Step 2: Install NuGet Packages
+
+Open a terminal in your project directory and run:
+
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Tools
-Step 3: Create Database
-Run migrations:
 
-bash
+
+### Step 3: Create the Database
+
+Run migrations to create the SQLite database:
+
 dotnet ef migrations add InitialCreate
 dotnet ef database update
-This creates WordInversion.db file. SQLite will handle everything.
 
-Step 4: Run The App
-bash
+This creates the `WordInversion.db` file. SQLite handles everything automatically.
+
+### Step 4: Run the Application
+
+Start the application:
+
 dotnet run
-App runs on https://localhost:7001. Open in browser.
 
-What To Expect
-You'll see:
 
-Input box to invert sentence
 
-Search box to find records
+The app runs on [**https://localhost:7001**](https://localhost:7001). Open this URL in your browser.
 
-Table showing all records
+## Usage
 
-Clean, simple UI
+The application provides three main functions:
 
-Type sentence → click invert → see result. Done.
+1. **Invert Sentence**: Type a sentence in the input box → Click invert → See the result
+2. **Search Records**: Enter a word in the search box → Click search → View matching records
+3. **View All Records**: All inverted sentences are displayed in a table
 
-Search word → click search → see matching records. Done.
+## What to Expect
+
+- Clean, simple user interface
+- Input box for sentence inversion
+- Search functionality
+- Table displaying all records with timestamps
+
+## Tech Stack
+
+- ASP.NET Core 8
+- Entity Framework Core
+- SQLite Database

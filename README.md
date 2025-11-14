@@ -1,6 +1,6 @@
 # Word Inversion App
 
-A ASP.NET Core 8 application for inverting words in sentences, searching records, and viewing history.
+An ASP.NET Core 8 application for inverting words in sentences, searching records, and viewing history.
 
 ## Features
 
